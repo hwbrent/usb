@@ -1,4 +1,5 @@
-import usb.core
+import usb.core as core
+import usb.backend as backend
 
 SysDVR = {
     "ProductId": "0x4ee0",
@@ -14,7 +15,7 @@ MAGIC_NS = {
 def find(device: dict):
     idVendor = device["VendorId"]
     idProduct = device["ProductId"]
-    return usb.core.find(idVendor=idVendor, idProduct=idProduct)
+    return core.find(idVendor=idVendor, idProduct=idProduct)
 
 
 def main():
