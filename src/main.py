@@ -19,8 +19,11 @@ def find(device: dict):
 
 
 def main():
-    print(find(SysDVR))
-    print(find(MAGIC_NS))
+    input = find(MAGIC_NS)
+    output = find(SysDVR)
+
+    print(input)
+    print(output)
 
 
 if __name__ == "__main__":
