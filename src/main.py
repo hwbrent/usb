@@ -2,13 +2,13 @@ import usb.core as core
 import usb.backend as backend
 
 SysDVR = {
-    "ProductId": "0x4ee0",
-    "VendorId": "0x18d1",
+    "ProductId": 0x4EE0,
+    "VendorId": 0x18D1,
 }
 
 MAGIC_NS = {
-    "ProductId": "0xa710",
-    "VendorId": "0x20d6",
+    "ProductId": 0xA710,
+    "VendorId": 0x20D6,
 }
 
 
